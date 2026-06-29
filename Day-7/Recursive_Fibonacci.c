@@ -3,19 +3,23 @@
 // Function declaration
 int fibonacci(int n);
 
-int main() {
+int main() 
+{
     int terms;
 
     printf("Enter the number of terms to print: ");
     scanf("%d", &terms);
 
-    if (terms <= 0) {
+    if (terms <= 0) 
+    {
         printf("Please enter a number greater than 0.\n");
-    } else {
+    } else 
+    {
         printf("Fibonacci Series: ");
         
         // Loop through each position and print the returned recursive value
-        for (int i = 0; i < terms; i++) {
+        for (int i = 0; i < terms; i++) 
+        {
             printf("%d ", fibonacci(i));
         }
         printf("\n");
